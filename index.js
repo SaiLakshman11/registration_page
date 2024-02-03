@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect('mongodb+srv://bvssl:1116@cluster0.xet70e1.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://bvssl:1116@cluster0.xet70e1.mongodb.net/');
 
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true },
